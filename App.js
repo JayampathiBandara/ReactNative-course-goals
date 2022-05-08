@@ -1,4 +1,4 @@
-import { Button, StyleSheet, TextInput, View } from 'react-native';
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
   return (
@@ -6,6 +6,9 @@ export default function App() {
       <View style={styles.inputContainer}>
         <TextInput style={styles.textInput} placeholder="Your course goal!" />
         <Button title="Add Goal" />
+      </View>
+      <View style={styles.goalsContainer}>
+        <Text>List of goals...</Text>
       </View>
     </View>
   );
@@ -33,4 +36,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
     padding: 8
   },
+  goalsContainer: {
+    flex: 5
+  }
 });
